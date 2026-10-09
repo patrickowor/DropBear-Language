@@ -6,6 +6,7 @@ const multiply = all((a, b) => a * b);
 const divide = all((a, b) => a / b);
 const modulo = all((a, b) => a % b);
 const log = console.log;
+const max = all((a, b) => a > b ? a : b);
 
 const environment = {
   add,
@@ -15,6 +16,7 @@ const environment = {
   modulo,
   log,
   pi: Math.PI,
+  max: max,
 };
 
 module.exports = { environment };
